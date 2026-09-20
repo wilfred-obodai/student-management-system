@@ -1,15 +1,15 @@
 package model;
 
 public class Student {
-    private int id;
+    private int Id;
     private String name;
     private String email;
     private String phone;
     private String program;
     private String year;
 
-    public Student(int id, String name, String email, String phone, String program, String year) {
-        this.id = id;
+    public Student(int Id, String name, String email, String phone, String program, String year) {
+        this.Id = Id;
         this.name = name;
         this.email = email;
         this.phone = phone;
@@ -17,8 +17,8 @@ public class Student {
         this.year = year;
     }
 
-    public int getid() {
-        return id;
+    public int getId() {
+        return Id;
     }
 
     public String getName() {
@@ -39,6 +39,11 @@ public class Student {
 
     public String getYear() {
         return year;
+    }
+
+    //Setter for changing students phone number
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }
 
